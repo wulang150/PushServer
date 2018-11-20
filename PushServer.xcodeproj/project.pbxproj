@@ -1,0 +1,683 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		660B1A22AB34C6D202A92691 /* libPods-PushServer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CD6C7BF3C15F85212304279 /* libPods-PushServer.a */; };
+		930BE8511F4A7FDA00AA5178 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 930BE8501F4A7FDA00AA5178 /* main.m */; };
+		930BE8541F4A7FDA00AA5178 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 930BE8531F4A7FDA00AA5178 /* AppDelegate.m */; };
+		930BE8571F4A7FDA00AA5178 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 930BE8561F4A7FDA00AA5178 /* ViewController.m */; };
+		930BE85A1F4A7FDA00AA5178 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 930BE8581F4A7FDA00AA5178 /* Main.storyboard */; };
+		930BE85C1F4A7FDA00AA5178 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 930BE85B1F4A7FDA00AA5178 /* Assets.xcassets */; };
+		930BE85F1F4A7FDA00AA5178 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 930BE85D1F4A7FDA00AA5178 /* LaunchScreen.storyboard */; };
+		930BE86A1F4A7FDA00AA5178 /* PushServerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 930BE8691F4A7FDA00AA5178 /* PushServerTests.m */; };
+		930BE8751F4A7FDA00AA5178 /* PushServerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 930BE8741F4A7FDA00AA5178 /* PushServerUITests.m */; };
+		930BE8851F4A81DE00AA5178 /* AppDelegate+Jpush.m in Sources */ = {isa = PBXBuildFile; fileRef = 930BE8841F4A81DE00AA5178 /* AppDelegate+Jpush.m */; };
+		930BE88A1F4AB5BE00AA5178 /* LocalNotifyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 930BE8891F4AB5BE00AA5178 /* LocalNotifyManager.m */; };
+		930BE88E1F4AE3C400AA5178 /* AppUpdateCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 930BE88D1F4AE3C400AA5178 /* AppUpdateCheck.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		930BE8661F4A7FDA00AA5178 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 930BE8441F4A7FDA00AA5178 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 930BE84B1F4A7FDA00AA5178;
+			remoteInfo = PushServer;
+		};
+		930BE8711F4A7FDA00AA5178 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 930BE8441F4A7FDA00AA5178 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 930BE84B1F4A7FDA00AA5178;
+			remoteInfo = PushServer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2CD6C7BF3C15F85212304279 /* libPods-PushServer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PushServer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		930BE84C1F4A7FDA00AA5178 /* PushServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		930BE8501F4A7FDA00AA5178 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		930BE8521F4A7FDA00AA5178 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		930BE8531F4A7FDA00AA5178 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		930BE8551F4A7FDA00AA5178 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		930BE8561F4A7FDA00AA5178 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		930BE8591F4A7FDA00AA5178 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		930BE85B1F4A7FDA00AA5178 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		930BE85E1F4A7FDA00AA5178 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		930BE8601F4A7FDA00AA5178 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		930BE8651F4A7FDA00AA5178 /* PushServerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PushServerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		930BE8691F4A7FDA00AA5178 /* PushServerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PushServerTests.m; sourceTree = "<group>"; };
+		930BE86B1F4A7FDA00AA5178 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		930BE8701F4A7FDA00AA5178 /* PushServerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PushServerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		930BE8741F4A7FDA00AA5178 /* PushServerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PushServerUITests.m; sourceTree = "<group>"; };
+		930BE8761F4A7FDA00AA5178 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		930BE8831F4A81DE00AA5178 /* AppDelegate+Jpush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Jpush.h"; sourceTree = "<group>"; };
+		930BE8841F4A81DE00AA5178 /* AppDelegate+Jpush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Jpush.m"; sourceTree = "<group>"; };
+		930BE8861F4A891D00AA5178 /* PushServer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PushServer.entitlements; sourceTree = "<group>"; };
+		930BE8881F4AB5BE00AA5178 /* LocalNotifyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalNotifyManager.h; sourceTree = "<group>"; };
+		930BE8891F4AB5BE00AA5178 /* LocalNotifyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalNotifyManager.m; sourceTree = "<group>"; };
+		930BE88C1F4AE3C400AA5178 /* AppUpdateCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppUpdateCheck.h; sourceTree = "<group>"; };
+		930BE88D1F4AE3C400AA5178 /* AppUpdateCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppUpdateCheck.m; sourceTree = "<group>"; };
+		CC1078F06ACDD2F92B9EB1D5 /* Pods-PushServer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushServer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PushServer/Pods-PushServer.debug.xcconfig"; sourceTree = "<group>"; };
+		EDB9B343E11E806B4AEFE075 /* Pods-PushServer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushServer.release.xcconfig"; path = "Pods/Target Support Files/Pods-PushServer/Pods-PushServer.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		930BE8491F4A7FDA00AA5178 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				660B1A22AB34C6D202A92691 /* libPods-PushServer.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		930BE8621F4A7FDA00AA5178 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		930BE86D1F4A7FDA00AA5178 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6CCD6DA38BA0C3854D188C5B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2CD6C7BF3C15F85212304279 /* libPods-PushServer.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		930BE8431F4A7FDA00AA5178 = {
+			isa = PBXGroup;
+			children = (
+				930BE84E1F4A7FDA00AA5178 /* PushServer */,
+				930BE8681F4A7FDA00AA5178 /* PushServerTests */,
+				930BE8731F4A7FDA00AA5178 /* PushServerUITests */,
+				930BE84D1F4A7FDA00AA5178 /* Products */,
+				F3D376BFFE94A204CFECFEBC /* Pods */,
+				6CCD6DA38BA0C3854D188C5B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		930BE84D1F4A7FDA00AA5178 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				930BE84C1F4A7FDA00AA5178 /* PushServer.app */,
+				930BE8651F4A7FDA00AA5178 /* PushServerTests.xctest */,
+				930BE8701F4A7FDA00AA5178 /* PushServerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		930BE84E1F4A7FDA00AA5178 /* PushServer */ = {
+			isa = PBXGroup;
+			children = (
+				930BE8861F4A891D00AA5178 /* PushServer.entitlements */,
+				930BE88B1F4AE39700AA5178 /* AppUpdateCheck */,
+				930BE8871F4AB28F00AA5178 /* LocalNotifyManager */,
+				930BE8821F4A800300AA5178 /* Jpush */,
+				930BE8521F4A7FDA00AA5178 /* AppDelegate.h */,
+				930BE8531F4A7FDA00AA5178 /* AppDelegate.m */,
+				930BE8551F4A7FDA00AA5178 /* ViewController.h */,
+				930BE8561F4A7FDA00AA5178 /* ViewController.m */,
+				930BE8581F4A7FDA00AA5178 /* Main.storyboard */,
+				930BE85B1F4A7FDA00AA5178 /* Assets.xcassets */,
+				930BE85D1F4A7FDA00AA5178 /* LaunchScreen.storyboard */,
+				930BE8601F4A7FDA00AA5178 /* Info.plist */,
+				930BE84F1F4A7FDA00AA5178 /* Supporting Files */,
+			);
+			path = PushServer;
+			sourceTree = "<group>";
+		};
+		930BE84F1F4A7FDA00AA5178 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				930BE8501F4A7FDA00AA5178 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		930BE8681F4A7FDA00AA5178 /* PushServerTests */ = {
+			isa = PBXGroup;
+			children = (
+				930BE8691F4A7FDA00AA5178 /* PushServerTests.m */,
+				930BE86B1F4A7FDA00AA5178 /* Info.plist */,
+			);
+			path = PushServerTests;
+			sourceTree = "<group>";
+		};
+		930BE8731F4A7FDA00AA5178 /* PushServerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				930BE8741F4A7FDA00AA5178 /* PushServerUITests.m */,
+				930BE8761F4A7FDA00AA5178 /* Info.plist */,
+			);
+			path = PushServerUITests;
+			sourceTree = "<group>";
+		};
+		930BE8821F4A800300AA5178 /* Jpush */ = {
+			isa = PBXGroup;
+			children = (
+				930BE8831F4A81DE00AA5178 /* AppDelegate+Jpush.h */,
+				930BE8841F4A81DE00AA5178 /* AppDelegate+Jpush.m */,
+			);
+			path = Jpush;
+			sourceTree = "<group>";
+		};
+		930BE8871F4AB28F00AA5178 /* LocalNotifyManager */ = {
+			isa = PBXGroup;
+			children = (
+				930BE8881F4AB5BE00AA5178 /* LocalNotifyManager.h */,
+				930BE8891F4AB5BE00AA5178 /* LocalNotifyManager.m */,
+			);
+			path = LocalNotifyManager;
+			sourceTree = "<group>";
+		};
+		930BE88B1F4AE39700AA5178 /* AppUpdateCheck */ = {
+			isa = PBXGroup;
+			children = (
+				930BE88C1F4AE3C400AA5178 /* AppUpdateCheck.h */,
+				930BE88D1F4AE3C400AA5178 /* AppUpdateCheck.m */,
+			);
+			path = AppUpdateCheck;
+			sourceTree = "<group>";
+		};
+		F3D376BFFE94A204CFECFEBC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CC1078F06ACDD2F92B9EB1D5 /* Pods-PushServer.debug.xcconfig */,
+				EDB9B343E11E806B4AEFE075 /* Pods-PushServer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		930BE84B1F4A7FDA00AA5178 /* PushServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 930BE8791F4A7FDA00AA5178 /* Build configuration list for PBXNativeTarget "PushServer" */;
+			buildPhases = (
+				DB5230FD50576154C407C442 /* [CP] Check Pods Manifest.lock */,
+				930BE8481F4A7FDA00AA5178 /* Sources */,
+				930BE8491F4A7FDA00AA5178 /* Frameworks */,
+				930BE84A1F4A7FDA00AA5178 /* Resources */,
+				C2DDE52899D61C0B5C112610 /* [CP] Embed Pods Frameworks */,
+				6D147C2935C3CBF31AAAE8BA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PushServer;
+			productName = PushServer;
+			productReference = 930BE84C1F4A7FDA00AA5178 /* PushServer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		930BE8641F4A7FDA00AA5178 /* PushServerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 930BE87C1F4A7FDA00AA5178 /* Build configuration list for PBXNativeTarget "PushServerTests" */;
+			buildPhases = (
+				930BE8611F4A7FDA00AA5178 /* Sources */,
+				930BE8621F4A7FDA00AA5178 /* Frameworks */,
+				930BE8631F4A7FDA00AA5178 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				930BE8671F4A7FDA00AA5178 /* PBXTargetDependency */,
+			);
+			name = PushServerTests;
+			productName = PushServerTests;
+			productReference = 930BE8651F4A7FDA00AA5178 /* PushServerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		930BE86F1F4A7FDA00AA5178 /* PushServerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 930BE87F1F4A7FDA00AA5178 /* Build configuration list for PBXNativeTarget "PushServerUITests" */;
+			buildPhases = (
+				930BE86C1F4A7FDA00AA5178 /* Sources */,
+				930BE86D1F4A7FDA00AA5178 /* Frameworks */,
+				930BE86E1F4A7FDA00AA5178 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				930BE8721F4A7FDA00AA5178 /* PBXTargetDependency */,
+			);
+			name = PushServerUITests;
+			productName = PushServerUITests;
+			productReference = 930BE8701F4A7FDA00AA5178 /* PushServerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		930BE8441F4A7FDA00AA5178 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Tmac;
+				TargetAttributes = {
+					930BE84B1F4A7FDA00AA5178 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 8PPU93XBS4;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					930BE8641F4A7FDA00AA5178 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 8PPU93XBS4;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 930BE84B1F4A7FDA00AA5178;
+					};
+					930BE86F1F4A7FDA00AA5178 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 8PPU93XBS4;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 930BE84B1F4A7FDA00AA5178;
+					};
+				};
+			};
+			buildConfigurationList = 930BE8471F4A7FDA00AA5178 /* Build configuration list for PBXProject "PushServer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 930BE8431F4A7FDA00AA5178;
+			productRefGroup = 930BE84D1F4A7FDA00AA5178 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				930BE84B1F4A7FDA00AA5178 /* PushServer */,
+				930BE8641F4A7FDA00AA5178 /* PushServerTests */,
+				930BE86F1F4A7FDA00AA5178 /* PushServerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		930BE84A1F4A7FDA00AA5178 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				930BE85F1F4A7FDA00AA5178 /* LaunchScreen.storyboard in Resources */,
+				930BE85C1F4A7FDA00AA5178 /* Assets.xcassets in Resources */,
+				930BE85A1F4A7FDA00AA5178 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		930BE8631F4A7FDA00AA5178 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		930BE86E1F4A7FDA00AA5178 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6D147C2935C3CBF31AAAE8BA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PushServer/Pods-PushServer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2DDE52899D61C0B5C112610 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PushServer/Pods-PushServer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB5230FD50576154C407C442 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PushServer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		930BE8481F4A7FDA00AA5178 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				930BE8571F4A7FDA00AA5178 /* ViewController.m in Sources */,
+				930BE88E1F4AE3C400AA5178 /* AppUpdateCheck.m in Sources */,
+				930BE88A1F4AB5BE00AA5178 /* LocalNotifyManager.m in Sources */,
+				930BE8541F4A7FDA00AA5178 /* AppDelegate.m in Sources */,
+				930BE8511F4A7FDA00AA5178 /* main.m in Sources */,
+				930BE8851F4A81DE00AA5178 /* AppDelegate+Jpush.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		930BE8611F4A7FDA00AA5178 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				930BE86A1F4A7FDA00AA5178 /* PushServerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		930BE86C1F4A7FDA00AA5178 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				930BE8751F4A7FDA00AA5178 /* PushServerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		930BE8671F4A7FDA00AA5178 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 930BE84B1F4A7FDA00AA5178 /* PushServer */;
+			targetProxy = 930BE8661F4A7FDA00AA5178 /* PBXContainerItemProxy */;
+		};
+		930BE8721F4A7FDA00AA5178 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 930BE84B1F4A7FDA00AA5178 /* PushServer */;
+			targetProxy = 930BE8711F4A7FDA00AA5178 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		930BE8581F4A7FDA00AA5178 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				930BE8591F4A7FDA00AA5178 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		930BE85D1F4A7FDA00AA5178 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				930BE85E1F4A7FDA00AA5178 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		930BE8771F4A7FDA00AA5178 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		930BE8781F4A7FDA00AA5178 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		930BE87A1F4A7FDA00AA5178 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC1078F06ACDD2F92B9EB1D5 /* Pods-PushServer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PushServer/PushServer.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development IOS Push Services: com.fendaTeamIOS.wulang.PushServer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 8PPU93XBS4;
+				INFOPLIST_FILE = PushServer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fendaTeamIOS.wulang.PushServer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		930BE87B1F4A7FDA00AA5178 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDB9B343E11E806B4AEFE075 /* Pods-PushServer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PushServer/PushServer.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Push Services: com.fendaTeamIOS.wulang.PushServer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 8PPU93XBS4;
+				INFOPLIST_FILE = PushServer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fendaTeamIOS.wulang.PushServer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+		930BE87D1F4A7FDA00AA5178 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 8PPU93XBS4;
+				INFOPLIST_FILE = PushServerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fendaTeamIOS.PushServerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PushServer.app/PushServer";
+			};
+			name = Debug;
+		};
+		930BE87E1F4A7FDA00AA5178 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 8PPU93XBS4;
+				INFOPLIST_FILE = PushServerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fendaTeamIOS.PushServerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PushServer.app/PushServer";
+			};
+			name = Release;
+		};
+		930BE8801F4A7FDA00AA5178 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 8PPU93XBS4;
+				INFOPLIST_FILE = PushServerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fendaTeamIOS.PushServerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PushServer;
+			};
+			name = Debug;
+		};
+		930BE8811F4A7FDA00AA5178 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 8PPU93XBS4;
+				INFOPLIST_FILE = PushServerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fendaTeamIOS.PushServerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PushServer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		930BE8471F4A7FDA00AA5178 /* Build configuration list for PBXProject "PushServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				930BE8771F4A7FDA00AA5178 /* Debug */,
+				930BE8781F4A7FDA00AA5178 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		930BE8791F4A7FDA00AA5178 /* Build configuration list for PBXNativeTarget "PushServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				930BE87A1F4A7FDA00AA5178 /* Debug */,
+				930BE87B1F4A7FDA00AA5178 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		930BE87C1F4A7FDA00AA5178 /* Build configuration list for PBXNativeTarget "PushServerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				930BE87D1F4A7FDA00AA5178 /* Debug */,
+				930BE87E1F4A7FDA00AA5178 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		930BE87F1F4A7FDA00AA5178 /* Build configuration list for PBXNativeTarget "PushServerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				930BE8801F4A7FDA00AA5178 /* Debug */,
+				930BE8811F4A7FDA00AA5178 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 930BE8441F4A7FDA00AA5178 /* Project object */;
+}
